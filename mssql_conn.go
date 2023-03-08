@@ -7,7 +7,7 @@ import (
 
 //register driver for use with database/sql package
 func init() {
-	sql.Register("mssql", &MssqlDriver{})
+	sql.Register("mssqltds", &MssqlDriver{})
 }
 
 //implements Driver interface from http://golang.org/src/pkg/database/sql/driver/driver.go
